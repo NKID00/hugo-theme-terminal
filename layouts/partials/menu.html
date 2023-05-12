@@ -23,7 +23,7 @@
         </li>
       {{ end }}
     {{ else }}
-      {{ range $.Site.Menus.main }}
+      {{ range sort $.Site.Menus.main "Identifier" }}
         {{ if not .HasChildren }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
