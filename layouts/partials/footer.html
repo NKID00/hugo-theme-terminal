@@ -1,7 +1,11 @@
 <footer class="footer">
   <div class="footer__inner">
       <div class="copyright copyright--user">
-        <span>© {{ now.Year }} NKID00</span>
+        {{ range $.Site.Menus.main }}
+          {{ if eq .Identifier "3-about" }}
+            <span><a href="{{ .URL }}">© {{ now.Year }} NKID00</a></span>
+          {{ end }}
+        {{ end }}
       </div>
   </div>
 </footer>
