@@ -96,6 +96,7 @@
 
     > li {
       flex: 0 0 auto;
+      white-space: nowrap;
 
       &:not(:last-of-type) {
         margin-bottom: 10px;
