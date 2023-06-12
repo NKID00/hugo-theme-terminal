@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: 'Atkinson Hyperlegible', 'Trebuchet MS', 'Inconsolata', Monaco, Consolas, Ubuntu Mono, monospace;
   font-size: 1rem;
   line-height: 1.54;
   letter-spacing: -0.02em;
@@ -129,10 +129,8 @@ code, kbd {
   font-family: 'Inconsolata', Monaco, Consolas, Ubuntu Mono, monospace !important;
   font-feature-settings: normal;
   background: transparentize($accent, .8);
-  color: $accent;
   padding: 1px 6px;
   margin: 0 2px;
-  font-size: .95rem;
 
   code, kbd {
     background: transparent;
@@ -142,13 +140,14 @@ code, kbd {
 }
 
 pre {
-  background: transparent !important;
-  padding: 20px 10px;
-  margin: 40px 0;
-  font-size: .95rem !important;
+  background: transparentize($accent, .95) !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
   overflow: auto;
-  border-top: 1px solid rgba(255, 255, 255, .1);
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
 
   + pre {
     border-top: 0;

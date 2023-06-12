@@ -1,9 +1,9 @@
 {{ $inner := replaceRE "^\r?\n" "" .Inner | string }}
 {{ if len .Params | eq 0 }}
-  <pre><code>{{ $inner }}</code></pre>
+  <pre class="line-numbers" data-start="0"><code>{{ $inner }}</code></pre>
 {{ else }}
   {{ if .IsNamedParams }}
-    <pre class="
+    <pre class="line-numbers" data-start="0" class="
       {{- if .Get "lang" }}language-{{ .Get "lang" }}{{ end }}
       {{- if .Get "line-numbers" }} line-numbers{{ end }}
       {{- if .Get "command-line" }} command-line{{ end }}"

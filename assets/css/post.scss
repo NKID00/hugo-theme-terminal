@@ -33,6 +33,7 @@
     font-size: 1rem;
     margin-bottom: 10px;
     color: transparentize($color, .5);
+    font-family: 'Inconsolata', Monaco, Consolas, Ubuntu Mono, monospace !important;
   }
 
   &-title {
